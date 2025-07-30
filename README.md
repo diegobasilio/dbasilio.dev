@@ -6,4 +6,4 @@ The goal is to build a clean and responsive portfolio that effectively showcases
 
 > 🚀 I'm constantly improving and open to new opportunities in backend and fullstack development.
 
-Feel free to connect with me on social media [LinkedIn](https://www.linkedin.com/in/diegobasilio/). 🔗
+Feel free to connect with me on social media [LinkedIn](https://www.linkedin.com/in/diegobasilio10/). 🔗
