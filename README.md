@@ -1,4 +1,4 @@
-# Diego Basilio - Software Developer Portfolio 👨‍💻
+# Diego de Melo Basilio - Software Developer Portfolio 👨‍💻
 
 Welcome to my personal portfolio repository. This project is designed to present who I am, my technical skills, technology stacks, professional experience, and academic background.  
 
