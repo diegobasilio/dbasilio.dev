@@ -13,31 +13,35 @@ export const profile = {
     url: "https://wa.me/5511941527358?text=Ol%C3%A1%20Diego%2C%20vi%20seu%20portf%C3%B3lio%20e%20gostaria%20de%20conversar%20sobre%20uma%20oportunidade.",
   },
   linkedin: "https://www.linkedin.com/in/diegobasilio10/",
-  // TODO: add your GitHub profile URL.
-  github: "https://github.com/",
+  instagram: "https://www.instagram.com/_diegobasilio/",
+  github: "https://github.com/diegobasilio",
   email: "diegobasilio10@gmail.com",
 };
 
-export type ExperienceStep = {
+export type JourneyRole = {
   title: string;
   current?: boolean;
 };
 
-export type Experience = {
+export type JourneyEntry = {
   company: string;
   // Career progression at this company, oldest first.
-  steps: ExperienceStep[];
+  roles: JourneyRole[];
 };
 
-export const experience: Experience = {
-  company: "VBS",
-  steps: [
-    { title: "Desenvolvedor Júnior" },
-    { title: "Desenvolvedor Júnior II" },
-    { title: "Desenvolvedor Júnior III" },
-    { title: "Desenvolvedor Pleno", current: true },
-  ],
-};
+export const journey: JourneyEntry[] = [
+  {
+    company: "VBS",
+    roles: [
+      { title: "Desenvolvedor Júnior" },
+      { title: "Desenvolvedor Júnior II" },
+      { title: "Desenvolvedor Júnior III" },
+      { title: "Desenvolvedor Pleno", current: true },
+    ],
+  },
+  // Add new companies here — same shape as above. The description text for
+  // each company's card lives in `journey.descriptions` in src/i18n/pt.ts and en.ts.
+];
 
 export type Project = {
   name: string;

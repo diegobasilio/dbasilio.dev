@@ -3,36 +3,27 @@ import type { Dictionary } from "./types";
 export const en: Dictionary = {
   nav: {
     about: "About",
-    experience: "Experience",
+    journey: "Experience",
     projects: "Projects",
     stack: "Stack",
     contact: "Contact",
   },
   hero: {
-    role: "Software Engineer — Full Stack Developer",
-    tagline: "Building software that solves real problems.",
-    description:
-      "Full Stack Developer focused on building production web applications and financial systems.",
+    role: "Full Stack Software Developer",
+    tagline: "We can only see a short distance ahead, but we can see plenty there that needs to be done.",
     cta: "Let's talk",
   },
   about: {
     title: "About",
     paragraph:
-      "I'm a Full Stack Developer with 3+ years of experience building web applications and financial systems. My work spans backend and frontend — from REST APIs to modern interfaces — including the modernization of legacy systems.",
+      "Full Stack Software Developer with 3 years of experience developing and modernizing web applications in the financial sector. Hands-on experience with C#, .NET, Blazor, REST APIs, JavaScript, and Oracle PL/SQL, working on building new features, evolving legacy systems, integrations, and end-to-end production support.",
   },
-  experience: {
+  journey: {
     title: "Experience",
     current: "Current",
-    focusTitle: "Focus areas",
-    focusAreas: [
-      "Requirements & business rule analysis",
-      "Technical solution design",
-      "Full-stack development — APIs, frontend & backend",
-      "Testing, staging & deploy",
-      "Production troubleshooting & root cause analysis",
-      "Mentoring junior developers",
-      "Legacy system modernization",
-    ],
+    descriptions: {
+      VBS: "Progressed from Junior Developer to Mid-level Developer, working across the full stack — from requirement analysis and technical design to APIs, frontend, backend, testing, staging and deploys. Also investigates production issues, performs root cause analysis, mentors junior developers and works on modernizing legacy systems.",
+    },
   },
   projects: {
     title: "Selected Projects",
@@ -53,22 +44,10 @@ export const en: Dictionary = {
       devops: "DevOps",
     },
   },
-  howIWork: {
-    title: "How I Work",
-    steps: [
-      { title: "Understand", description: "Understanding the problem and the business rules." },
-      { title: "Design", description: "Defining the technical approach." },
-      { title: "Build", description: "Developing the solution." },
-      { title: "Validate", description: "Testing and staging." },
-      { title: "Deploy", description: "Shipping and monitoring." },
-    ],
-  },
   contact: {
-    title: "Let's build something together.",
-    subtitle: "Open to new opportunities in Brazil and abroad.",
+    title: "Let's connect.",
+    subtitle:
+      "Open to new connections, new technologies, new challenges, and opportunities in Brazil and abroad.",
     cta: "Message on WhatsApp",
-  },
-  footer: {
-    builtWith: "Built with React & Tailwind CSS.",
   },
 };

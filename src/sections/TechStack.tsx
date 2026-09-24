@@ -9,13 +9,13 @@ export function TechStack() {
   return (
     <section id="stack" className="mx-auto max-w-5xl scroll-mt-16 border-t border-border px-6 py-20">
       <Reveal>
-        <SectionHeading index="04" title={t.techStack.title} />
+        <SectionHeading title={t.techStack.title} />
       </Reveal>
 
       <div className="mt-10 grid grid-cols-1 gap-x-8 gap-y-10 sm:grid-cols-2 lg:grid-cols-4">
         {techStack.map((category, index) => (
           <Reveal key={category.key} delay={index * 80}>
-            <h3 className="font-mono text-xs tracking-[0.15em] text-accent">
+            <h3 className="font-mono text-xs tracking-[0.15em] text-fg">
               {t.techStack.categories[category.key].toUpperCase()}
             </h3>
             <ul className="mt-4 flex flex-col gap-2">

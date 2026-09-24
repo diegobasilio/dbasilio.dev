@@ -3,36 +3,27 @@ import type { Dictionary } from "./types";
 export const pt: Dictionary = {
   nav: {
     about: "Sobre",
-    experience: "Experiência",
+    journey: "Experiência",
     projects: "Projetos",
     stack: "Stack",
     contact: "Contato",
   },
   hero: {
-    role: "Software Engineer — Full Stack Developer",
-    tagline: "Construindo software que resolve problemas reais.",
-    description:
-      "Desenvolvedor Full Stack focado em construir aplicações web e sistemas financeiros em produção.",
+    role: "Full Stack Software Developer",
+    tagline: "Não podemos ver muito longe à nossa frente, mas podemos ver que há muito que precisa ser feito.",
     cta: "Vamos conversar",
   },
   about: {
     title: "Sobre",
     paragraph:
-      "Sou Desenvolvedor Full Stack com mais de 3 anos de experiência construindo aplicações web e sistemas financeiros. Meu trabalho abrange backend e frontend — de APIs REST a interfaces modernas — incluindo a modernização de sistemas legados.",
+      "Desenvolvedor de Software Full Stack com 3 anos de experiência no desenvolvimento e modernização de aplicações web no setor financeiro. Experiência prática com C#, .NET, Blazor, APIs REST, JavaScript e Oracle PL/SQL, atuando na construção de novas funcionalidades, evolução de sistemas legados, integrações e sustentação de aplicações em produção end-to-end.",
   },
-  experience: {
+  journey: {
     title: "Experiência",
     current: "Atual",
-    focusTitle: "Áreas de atuação",
-    focusAreas: [
-      "Levantamento de requisitos e regras de negócio",
-      "Definição da abordagem técnica",
-      "Desenvolvimento full-stack — APIs, frontend e backend",
-      "Testes, homologação e deploy",
-      "Investigação de problemas em produção e análise de causa raiz",
-      "Apoio a desenvolvedores juniores",
-      "Modernização de sistemas legados",
-    ],
+    descriptions: {
+      VBS: "Evoluiu de Desenvolvedor Júnior a Desenvolvedor Pleno, atuando em todo o ciclo — da análise de requisitos e definição da abordagem técnica ao desenvolvimento de APIs, frontend e backend, testes, homologação e deploy. Também investiga problemas em produção, realiza análise de causa raiz, apoia desenvolvedores juniores e atua na modernização de sistemas legados.",
+    },
   },
   projects: {
     title: "Projetos Selecionados",
@@ -53,22 +44,10 @@ export const pt: Dictionary = {
       devops: "DevOps",
     },
   },
-  howIWork: {
-    title: "Como Trabalho",
-    steps: [
-      { title: "Understand", description: "Entender o problema e as regras de negócio." },
-      { title: "Design", description: "Definir a abordagem técnica." },
-      { title: "Build", description: "Desenvolver a solução." },
-      { title: "Validate", description: "Testar e homologar." },
-      { title: "Deploy", description: "Publicar e acompanhar." },
-    ],
-  },
   contact: {
-    title: "Vamos construir algo juntos.",
-    subtitle: "Aberto a novas oportunidades no Brasil e no exterior.",
+    title: "Vamos nos conectar.",
+    subtitle:
+      "Aberto a novas conexões, novas tecnologias, novos desafios e oportunidades no Brasil e no exterior.",
     cta: "Chamar no WhatsApp",
-  },
-  footer: {
-    builtWith: "Feito com React & Tailwind CSS.",
   },
 };

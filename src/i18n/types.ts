@@ -1,7 +1,7 @@
 export type Dictionary = {
   nav: {
     about: string;
-    experience: string;
+    journey: string;
     projects: string;
     stack: string;
     contact: string;
@@ -9,18 +9,16 @@ export type Dictionary = {
   hero: {
     role: string;
     tagline: string;
-    description: string;
     cta: string;
   };
   about: {
     title: string;
     paragraph: string;
   };
-  experience: {
+  journey: {
     title: string;
     current: string;
-    focusTitle: string;
-    focusAreas: string[];
+    descriptions: Record<string, string>;
   };
   projects: {
     title: string;
@@ -33,16 +31,9 @@ export type Dictionary = {
     title: string;
     categories: Record<"backend" | "frontend" | "database" | "devops", string>;
   };
-  howIWork: {
-    title: string;
-    steps: { title: string; description: string }[];
-  };
   contact: {
     title: string;
     subtitle: string;
     cta: string;
-  };
-  footer: {
-    builtWith: string;
   };
 };

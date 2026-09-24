@@ -5,7 +5,7 @@ import { CloseIcon, MenuIcon } from "./Icons";
 
 const sections = [
   { id: "about", key: "about" },
-  { id: "experience", key: "experience" },
+  { id: "journey", key: "journey" },
   { id: "projects", key: "projects" },
   { id: "stack", key: "stack" },
   { id: "contact", key: "contact" },

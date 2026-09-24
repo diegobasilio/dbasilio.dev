@@ -1,40 +1,68 @@
+import { useState } from "react";
 import { profile } from "../data/portfolio";
 import { useLanguage } from "../i18n/LanguageContext";
 import { ArrowUpRightIcon, GithubIcon, LinkedinIcon, MapPinIcon, WhatsAppIcon } from "../components/Icons";
+
+// Reserved photo slot: drop a file at `public/profile.jpg` and it appears
+// here automatically — no layout or code changes needed. Until then, this
+// falls back to a placeholder with the same fixed size.
+function HeroPhoto() {
+  const [failed, setFailed] = useState(false);
+
+  return (
+    <div className="animate-fade-in h-24 w-24 shrink-0 overflow-hidden rounded-full border border-border bg-surface">
+      {!failed ? (
+        <img
+          src="/profile.jpg"
+          alt={profile.name}
+          className="h-full w-full object-cover"
+          onError={() => setFailed(true)}
+        />
+      ) : (
+        <div className="flex h-full w-full items-center justify-center font-mono text-xs text-muted">
+          DB
+        </div>
+      )}
+    </div>
+  );
+}
 
 export function Hero() {
   const { t } = useLanguage();
 
   return (
     <section id="top" className="mx-auto flex max-w-5xl flex-col px-6 pb-24 pt-20 sm:pt-28">
-      <p className="animate-fade-in font-mono text-sm tracking-[0.2em] text-accent">
+      <HeroPhoto />
+
+      <p
+        className="animate-fade-in mt-8 font-mono text-sm tracking-[0.2em] text-muted"
+        style={{ animationDelay: "40ms" }}
+      >
         {t.hero.role.toUpperCase()}
       </p>
 
       <h1
-        className="animate-fade-in mt-6 max-w-3xl text-balance text-5xl font-medium leading-[1.05] tracking-tight text-fg sm:text-6xl md:text-7xl"
+        className="animate-fade-in mt-6 max-w-3xl text-balance text-5xl font-semibold leading-[1.05] tracking-tight text-fg sm:text-6xl md:text-7xl"
         style={{ animationDelay: "80ms" }}
       >
         {profile.name}
       </h1>
 
-      <p
-        className="animate-fade-in mt-6 max-w-xl text-balance text-lg text-muted sm:text-xl"
+      <blockquote
+        className="animate-fade-in mt-6 max-w-2xl border-l border-border pl-5"
         style={{ animationDelay: "160ms" }}
       >
-        &ldquo;{t.hero.tagline}&rdquo;
-      </p>
-
-      <p
-        className="animate-fade-in mt-4 max-w-xl text-balance text-base text-muted"
-        style={{ animationDelay: "220ms" }}
-      >
-        {t.hero.description}
-      </p>
+        <p className="text-balance text-lg text-muted sm:text-xl">
+          &ldquo;{t.hero.tagline}&rdquo;
+        </p>
+        <cite className="mt-2 block font-mono text-xs not-italic tracking-wide text-muted/70">
+          — Alan Turing
+        </cite>
+      </blockquote>
 
       <div
-        className="animate-fade-in mt-6 flex items-center gap-2 text-sm text-muted"
-        style={{ animationDelay: "280ms" }}
+        className="animate-fade-in mt-8 flex items-center gap-2 text-sm text-muted"
+        style={{ animationDelay: "260ms" }}
       >
         <MapPinIcon className="h-4 w-4" />
         <span>{profile.location}</span>
@@ -42,7 +70,7 @@ export function Hero() {
 
       <div
         className="animate-fade-in mt-10 flex flex-wrap items-center gap-4"
-        style={{ animationDelay: "340ms" }}
+        style={{ animationDelay: "320ms" }}
       >
         <a
           href={profile.whatsapp.url}

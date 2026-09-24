@@ -8,7 +8,7 @@ export function About() {
   return (
     <section id="about" className="mx-auto max-w-5xl scroll-mt-16 border-t border-border px-6 py-20">
       <Reveal>
-        <SectionHeading index="01" title={t.about.title} />
+        <SectionHeading title={t.about.title} />
         <p className="mt-8 max-w-2xl text-balance text-lg leading-relaxed text-muted">
           {t.about.paragraph}
         </p>

@@ -13,7 +13,7 @@ export function Projects() {
       className="mx-auto max-w-5xl scroll-mt-16 border-t border-border px-6 py-20"
     >
       <Reveal>
-        <SectionHeading index="03" title={t.projects.title} />
+        <SectionHeading title={t.projects.title} />
       </Reveal>
 
       <div className="mt-10 flex flex-col divide-y divide-border">
@@ -21,7 +21,7 @@ export function Projects() {
           <Reveal key={project.name} delay={index * 80} className="py-8 first:pt-0">
             <div className="flex flex-col gap-4 sm:flex-row sm:items-start sm:justify-between">
               <div className="max-w-2xl">
-                <h3 className="text-xl font-medium text-fg">{project.name}</h3>
+                <h3 className="text-xl font-semibold text-fg">{project.name}</h3>
                 <p className="mt-3 text-balance leading-relaxed text-muted">
                   {t.projects.descriptions[project.name] ?? ""}
                 </p>
