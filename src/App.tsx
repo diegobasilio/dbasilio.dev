@@ -3,6 +3,7 @@ import { WhatsAppFloatingButton } from "./components/WhatsAppFloatingButton";
 import { Hero } from "./sections/Hero";
 import { About } from "./sections/About";
 import { Journey } from "./sections/Journey";
+import { Education } from "./sections/Education";
 import { Projects } from "./sections/Projects";
 import { TechStack } from "./sections/TechStack";
 import { Contact } from "./sections/Contact";
@@ -15,6 +16,7 @@ export function App() {
         <Hero />
         <About />
         <Journey />
+        <Education />
         <Projects />
         <TechStack />
         <Contact />

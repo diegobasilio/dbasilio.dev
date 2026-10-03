@@ -4,6 +4,7 @@ export const en: Dictionary = {
   nav: {
     about: "About",
     journey: "Experience",
+    education: "Education",
     projects: "Projects",
     stack: "Stack",
     contact: "Contact",
@@ -11,7 +12,6 @@ export const en: Dictionary = {
   hero: {
     role: "Full Stack Software Developer",
     tagline: "We can only see a short distance ahead, but we can see plenty there that needs to be done.",
-    cta: "Let's talk",
   },
   about: {
     title: "About",
@@ -20,9 +20,23 @@ export const en: Dictionary = {
   },
   journey: {
     title: "Experience",
-    current: "Current",
-    descriptions: {
-      VBS: "Progressed from Junior Developer to Mid-level Developer, working across the full stack — from requirement analysis and technical design to APIs, frontend, backend, testing, staging and deploys. Also investigates production issues, performs root cause analysis, mentors junior developers and works on modernizing legacy systems.",
+    entries: {
+      vbs: {
+        period: "September 2023 — Present",
+        description:
+          "Working on critical financial systems, contributing end-to-end full stack development — from requirement analysis to deployment — with backend in C# and .NET, frontend in Blazor and JavaScript, and Oracle PL/SQL for the data layer. Actively involved in migrating and modernizing legacy systems to new web platforms, taking on growing autonomy in problem-solving and mentoring other developers.",
+      },
+    },
+  },
+  education: {
+    title: "Education",
+    levels: {
+      higher: "Associate Degree",
+      technical: "Technical Diploma",
+    },
+    status: {
+      "cruzeiro-sul": "Completed in 2024",
+      etec: "Completed in 2022",
     },
   },
   projects: {
@@ -37,12 +51,6 @@ export const en: Dictionary = {
   },
   techStack: {
     title: "Stack",
-    categories: {
-      backend: "Backend",
-      frontend: "Frontend",
-      database: "Database",
-      devops: "DevOps",
-    },
   },
   contact: {
     title: "Let's connect.",

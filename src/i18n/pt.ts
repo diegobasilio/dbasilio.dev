@@ -4,6 +4,7 @@ export const pt: Dictionary = {
   nav: {
     about: "Sobre",
     journey: "Experiência",
+    education: "Formação",
     projects: "Projetos",
     stack: "Stack",
     contact: "Contato",
@@ -11,7 +12,6 @@ export const pt: Dictionary = {
   hero: {
     role: "Full Stack Software Developer",
     tagline: "Não podemos ver muito longe à nossa frente, mas podemos ver que há muito que precisa ser feito.",
-    cta: "Vamos conversar",
   },
   about: {
     title: "Sobre",
@@ -20,9 +20,23 @@ export const pt: Dictionary = {
   },
   journey: {
     title: "Experiência",
-    current: "Atual",
-    descriptions: {
-      VBS: "Evoluiu de Desenvolvedor Júnior a Desenvolvedor Pleno, atuando em todo o ciclo — da análise de requisitos e definição da abordagem técnica ao desenvolvimento de APIs, frontend e backend, testes, homologação e deploy. Também investiga problemas em produção, realiza análise de causa raiz, apoia desenvolvedores juniores e atua na modernização de sistemas legados.",
+    entries: {
+      vbs: {
+        period: "Setembro 2023 — Presente",
+        description:
+          "Atuo em sistemas financeiros críticos, contribuindo com o desenvolvimento full stack end-to-end — da análise de requisitos à implantação — com backend em C# e .NET, frontend em Blazor e JavaScript, e banco de dados Oracle PL/SQL. Participo ativamente da migração e modernização de sistemas legados para novas plataformas web, atuando com autonomia crescente na resolução de problemas e no apoio a outros desenvolvedores.",
+      },
+    },
+  },
+  education: {
+    title: "Formação Acadêmica",
+    levels: {
+      higher: "Superior",
+      technical: "Ensino Técnico",
+    },
+    status: {
+      "cruzeiro-sul": "Concluído em 2024",
+      etec: "Concluído em 2022",
     },
   },
   projects: {
@@ -37,12 +51,6 @@ export const pt: Dictionary = {
   },
   techStack: {
     title: "Stack",
-    categories: {
-      backend: "Backend",
-      frontend: "Frontend",
-      database: "Banco de Dados",
-      devops: "DevOps",
-    },
   },
   contact: {
     title: "Vamos nos conectar.",

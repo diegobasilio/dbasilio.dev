@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { profile } from "../data/portfolio";
 import { useLanguage } from "../i18n/LanguageContext";
-import { ArrowUpRightIcon, GithubIcon, LinkedinIcon, MapPinIcon, WhatsAppIcon } from "../components/Icons";
+import { GithubIcon, LinkedinIcon, MapPinIcon } from "../components/Icons";
 
 // Reserved photo slot: drop a file at `public/profile.jpg` and it appears
 // here automatically — no layout or code changes needed. Until then, this
@@ -69,48 +69,27 @@ export function Hero() {
       </div>
 
       <div
-        className="animate-fade-in mt-10 flex flex-wrap items-center gap-4"
+        className="animate-fade-in mt-10 flex items-center gap-4 text-muted"
         style={{ animationDelay: "320ms" }}
       >
         <a
-          href={profile.whatsapp.url}
+          href={profile.github}
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-flex items-center gap-2 rounded-full bg-fg px-6 py-3 text-sm font-medium text-bg transition-opacity hover:opacity-85"
+          aria-label="GitHub"
+          className="transition-colors hover:text-fg"
         >
-          {t.hero.cta}
-          <ArrowUpRightIcon className="h-4 w-4" />
+          <GithubIcon className="h-5 w-5" />
         </a>
-
-        <div className="flex items-center gap-4 text-muted">
-          <a
-            href={profile.github}
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="GitHub"
-            className="transition-colors hover:text-fg"
-          >
-            <GithubIcon className="h-5 w-5" />
-          </a>
-          <a
-            href={profile.linkedin}
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="LinkedIn"
-            className="transition-colors hover:text-fg"
-          >
-            <LinkedinIcon className="h-5 w-5" />
-          </a>
-          <a
-            href={profile.whatsapp.url}
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="WhatsApp"
-            className="transition-colors hover:text-fg"
-          >
-            <WhatsAppIcon className="h-5 w-5" />
-          </a>
-        </div>
+        <a
+          href={profile.linkedin}
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="LinkedIn"
+          className="transition-colors hover:text-fg"
+        >
+          <LinkedinIcon className="h-5 w-5" />
+        </a>
       </div>
     </section>
   );

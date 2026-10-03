@@ -5,6 +5,8 @@
 
 export const profile = {
   name: "Diego Basilio",
+  // Shown as the logo/wordmark in the navbar.
+  brand: "dbasilio.dev",
   location: "São Paulo, Brazil",
   whatsapp: {
     // Displayed number.
@@ -13,34 +15,55 @@ export const profile = {
     url: "https://wa.me/5511941527358?text=Ol%C3%A1%20Diego%2C%20vi%20seu%20portf%C3%B3lio%20e%20gostaria%20de%20conversar%20sobre%20uma%20oportunidade.",
   },
   linkedin: "https://www.linkedin.com/in/diegobasilio10/",
-  instagram: "https://www.instagram.com/_diegobasilio/",
   github: "https://github.com/diegobasilio",
   email: "diegobasilio10@gmail.com",
 };
 
-export type JourneyRole = {
+export type ExperienceEntry = {
+  // Stable key used to look up period/description in
+  // src/i18n/pt.ts and en.ts (journey.entries[id]).
+  id: string;
   title: string;
-  current?: boolean;
-};
-
-export type JourneyEntry = {
   company: string;
-  // Career progression at this company, oldest first.
-  roles: JourneyRole[];
+  companyUrl?: string;
+  location: string;
 };
 
-export const journey: JourneyEntry[] = [
+// Most recent first.
+export const experience: ExperienceEntry[] = [
   {
+    id: "vbs",
+    title: "Desenvolvedor de Software Full Stack",
     company: "VBS",
-    roles: [
-      { title: "Desenvolvedor Júnior" },
-      { title: "Desenvolvedor Júnior II" },
-      { title: "Desenvolvedor Júnior III" },
-      { title: "Desenvolvedor Pleno", current: true },
-    ],
+    companyUrl: "https://www.vbsall.com.br/",
+    location: "São Paulo, Brazil",
   },
-  // Add new companies here — same shape as above. The description text for
-  // each company's card lives in `journey.descriptions` in src/i18n/pt.ts and en.ts.
+  // Add new positions here — same shape as above. The period/description
+  // text lives in `journey.entries` in src/i18n/pt.ts and en.ts.
+];
+
+export type EducationEntry = {
+  id: string;
+  institution: string;
+  degree: string;
+  level: "higher" | "technical";
+};
+
+export const education: EducationEntry[] = [
+  {
+    id: "cruzeiro-sul",
+    institution: "Universidade Cruzeiro do Sul",
+    degree: "Análise e Desenvolvimento de Sistemas",
+    level: "higher",
+  },
+  {
+    id: "etec",
+    institution: "ETEC Professor Camargo Aranha",
+    degree: "Técnico em Desenvolvimento de Sistemas",
+    level: "technical",
+  },
+  // Add new education entries here — same shape as above. The status text
+  // (e.g. "Completed in 2024") lives in `education.status` in pt.ts and en.ts.
 ];
 
 export type Project = {
@@ -69,14 +92,16 @@ export const projects: Project[] = [
   // Add new projects here — same shape as above.
 ];
 
-export type TechCategory = {
-  key: "backend" | "frontend" | "database" | "devops";
-  items: string[];
-};
-
-export const techStack: TechCategory[] = [
-  { key: "backend", items: ["C#", ".NET", "ASP.NET", "REST APIs"] },
-  { key: "frontend", items: ["Blazor", "Razor", "JavaScript", "HTML", "CSS"] },
-  { key: "database", items: ["Oracle", "PL/SQL", "PostgreSQL"] },
-  { key: "devops", items: ["Git", "GitHub", "Azure DevOps", "Docker", "CI/CD"] },
+// Day-to-day highlights, shown as a single row of badges — not an
+// exhaustive list. Add or remove freely.
+export const techStack: string[] = [
+  "C#",
+  ".NET",
+  "Blazor",
+  "REST APIs",
+  "JavaScript",
+  "Azure DevOps",
+  "Oracle PL/SQL",
+  "Docker",
+  "Git",
 ];

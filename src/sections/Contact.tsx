@@ -6,7 +6,6 @@ import { ArrowUpRightIcon } from "../components/Icons";
 const secondaryLinks = [
   { label: "LinkedIn", href: profile.linkedin },
   { label: "GitHub", href: profile.github },
-  { label: "Instagram", href: profile.instagram },
 ];
 
 export function Contact() {

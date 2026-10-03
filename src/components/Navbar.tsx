@@ -6,6 +6,7 @@ import { CloseIcon, MenuIcon } from "./Icons";
 const sections = [
   { id: "about", key: "about" },
   { id: "journey", key: "journey" },
+  { id: "education", key: "education" },
   { id: "projects", key: "projects" },
   { id: "stack", key: "stack" },
   { id: "contact", key: "contact" },
@@ -23,7 +24,7 @@ export function Navbar() {
           className="font-mono text-sm tracking-[0.2em] text-fg"
           onClick={() => setOpen(false)}
         >
-          {profile.name.toUpperCase()}
+          {profile.brand}
         </a>
 
         <nav className="hidden items-center gap-8 md:flex">

@@ -12,22 +12,16 @@ export function TechStack() {
         <SectionHeading title={t.techStack.title} />
       </Reveal>
 
-      <div className="mt-10 grid grid-cols-1 gap-x-8 gap-y-10 sm:grid-cols-2 lg:grid-cols-4">
-        {techStack.map((category, index) => (
-          <Reveal key={category.key} delay={index * 80}>
-            <h3 className="font-mono text-xs tracking-[0.15em] text-fg">
-              {t.techStack.categories[category.key].toUpperCase()}
-            </h3>
-            <ul className="mt-4 flex flex-col gap-2">
-              {category.items.map((item) => (
-                <li key={item} className="text-sm text-muted">
-                  {item}
-                </li>
-              ))}
-            </ul>
-          </Reveal>
+      <Reveal delay={80} className="mt-10 flex flex-wrap gap-3">
+        {techStack.map((item) => (
+          <span
+            key={item}
+            className="rounded-full border border-border px-4 py-2 text-sm text-fg"
+          >
+            {item}
+          </span>
         ))}
-      </div>
+      </Reveal>
     </section>
   );
 }
