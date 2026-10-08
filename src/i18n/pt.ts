@@ -24,7 +24,7 @@ export const pt: Dictionary = {
       vbs: {
         period: "Setembro 2023 — Presente",
         description:
-          "Atuo em sistemas financeiros críticos, contribuindo com o desenvolvimento full stack end-to-end — da análise de requisitos à implantação — com backend em C# e .NET, frontend em Blazor e JavaScript, e banco de dados Oracle PL/SQL. Participo ativamente da migração e modernização de sistemas legados para novas plataformas web, atuando com autonomia crescente na resolução de problemas e no apoio a outros desenvolvedores.",
+          "Atuo no desenvolvimento e evolução de sistemas financeiros em produção, trabalhando de ponta a ponta com C#, .NET, Blazor, JavaScript e Oracle PL/SQL. Participo desde a análise de requisitos até testes, homologação e implantação, além da investigação e resolução de problemas em produção. Também contribuo na modernização de sistemas legados, apoiando a migração para novas plataformas web e compartilhando conhecimento com outros desenvolvedores.",
       },
     },
   },

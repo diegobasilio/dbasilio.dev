@@ -24,7 +24,7 @@ export const en: Dictionary = {
       vbs: {
         period: "September 2023 — Present",
         description:
-          "Working on critical financial systems, contributing end-to-end full stack development — from requirement analysis to deployment — with backend in C# and .NET, frontend in Blazor and JavaScript, and Oracle PL/SQL for the data layer. Actively involved in migrating and modernizing legacy systems to new web platforms, taking on growing autonomy in problem-solving and mentoring other developers.",
+          "I work on the development and evolution of financial systems in production, operating end-to-end with C#, .NET, Blazor, JavaScript, and Oracle PL/SQL. I'm involved from requirement analysis through testing, staging, and deployment, as well as investigating and resolving production issues. I also contribute to modernizing legacy systems, supporting the migration to new web platforms and sharing knowledge with other developers.",
       },
     },
   },
